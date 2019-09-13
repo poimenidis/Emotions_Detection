@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fireTopLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+  <android.example.com.emotionsdetection.CameraSourcePreview
+      android:id="@+id/firePreview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <android.example.com.emotionsdetection.GraphicOverlay
+        android:id="@+id/fireFaceOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+  </android.example.com.emotionsdetection.CameraSourcePreview>
+
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:background="#ffff">
+
+        <Button
+            android:id="@+id/facingswitch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@layout/toggle_style"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </FrameLayout>
+
+</RelativeLayout>
